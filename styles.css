@@ -87,6 +87,9 @@ h2 {
     color: var(--midnight-blue);
 }
 
+p {
+    color: var(--dark-charcoal);
+}
 header img {
     display: block;
     margin: 0 auto;
@@ -126,8 +129,8 @@ nav {
 }
 
 section {
-    padding: 1rem;
-    border-bottom: 0.15rem solid var(--champagne-gold);
+    position: relative;
+    padding: 0 1rem;
     font-weight: lighter;
     color: var(--dark-charcoal);
 }
@@ -137,9 +140,20 @@ section p {
     display: inline-block;
 }
 
+hr {
+    border: none;
+    height: 0.15rem;
+    background-color: var(--champagne-gold);
+    width: 93%;
+    margin: 1rem auto;
+}
+
 .welcome {
-    padding-top: 2.5rem;
-    color: var(--dark-charcoal);
+    padding-top: 2rem;
+}
+
+.offerings, .gallery {
+    padding-top: 0.5rem;
 }
 
 article {
@@ -150,6 +164,10 @@ article {
     margin: 0.75rem 0;
     box-shadow: 0px 0.5px 3px var(--dark-charcoal);
     line-height: 1.75;
+}
+
+article p {
+    color: var(--linen);
 }
 
 article h3 {
@@ -184,17 +202,31 @@ figure {
     border-radius: 0.5rem;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 0.75rem;
 }
 
 .contact-info {
-    background-color: var(--midnight-blues);
+    background-color: var(--midnight-blue);
+    padding: 4rem 0;
+    margin: 0 auto;
+    text-align: center; 
+}
+address {
+    padding-bottom: 3rem;
+}
+
+address, #tel, #email, .social {
     text-align: center;
+    text-decoration: none;
+}
+
+address, #tel {
     color: var(--linen);
 }
 
-#email {
+#email, .social {
     color: var(--champagne-gold);
+    font-weight: bold;
 }
 
 /* MEDIA QUERY (medium) */
