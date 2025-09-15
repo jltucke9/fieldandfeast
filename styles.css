@@ -1,0 +1,179 @@
+/* CSS BY Jeanne Tucker */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ROOT VARIABLES */
+:root {
+    --midnight-blue: #1F2A44;
+    --olive-green: #76885B;
+    --champagne-gold: #E5C185;
+    --linen: #F8F4EC;
+    --dark-charcoal: #2B2B2B;
+    --soft-white: #FAF9F6;  
+    --font: "Playfair Display", serif;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+    font-family: var(--font);
+    margin: 0;
+    line-height: 1.25;
+}
+
+header, main, footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--midnight-blue);
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 2rem 0 0.5rem;
+}
+
+header {
+    background-color: var(--midnight-blue);
+    color: var(--soft-white);
+    text-align: center;
+    padding: 2rem 0 0;
+}
+
+header p {
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: var(--champagne-gold);
+    padding: 0.5rem
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--midnight-blue);
+    padding: 1rem;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+section {
+    padding: 1rem;
+    border-bottom: 0.15rem solid var(--champagne-gold);
+    font-weight: lighter;
+}
+
+section p {
+    font-size: 0.75rem;
+    display: inline-block;
+}
+
+.welcome {
+    padding-top: 2.5rem;
+}
+
+article {
+    background-color: var(--olive-green);
+    color: var(--linen);
+    border-radius: 0.35rem;
+    padding: 0.65rem;
+    margin: 0.75rem 0;
+    box-shadow: 0px 0.5px 3px var(--dark-charcoal);
+    line-height: 1.75;
+}
+
+article h3 {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+article ul {
+    font-size: 0.75rem;
+    list-style-type: disc;
+    margin-left: 0.75rem;
+}
+
+figure {
+    border-radius: 1rem;
+}
+
+
+/* MEDIA QUERY (medium) */
+
+
+/* MEDIA QUERY (large) */
+
+
+/* MEDIA QUERY (xl) */
+
+
+
+
