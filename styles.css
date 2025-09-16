@@ -95,7 +95,7 @@ p {
 header img {
     display: block;
     margin: 0 auto;
-    width: 50%;
+    width: 40%;
     padding: 2rem 0 0.5rem;
 }
 
@@ -141,14 +141,6 @@ section {
 section p {
     font-size: 0.75rem;
     display: inline-block;
-}
-
-hr {
-    border: none;
-    height: 0.1rem;
-    background-color: var(--champagne-gold);
-    width: 92%;
-    margin: 1rem auto;
 }
 
 .welcome {
@@ -231,20 +223,46 @@ address, #tel {
     font-weight: bold;
 }
 
+.welcome::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid var(--champagne-gold);
+    margin: 20px 0;
+}
+
+.offerings::after {
+    content: "";
+    display: grid;
+    grid-column: 1/-1;;
+    border-bottom: 1.25px solid var(--champagne-gold);
+    margin: 20px 0;
+}
+
+.gallery::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid var(--champagne-gold);
+    margin: 20px 0;
+    padding-top: 1rem;
+}
+
 /* MEDIA QUERY (medium) */
 @media all and (min-width: 600px) {
+    main {
+        margin: 0 auto;
+    }
 
     h1 {
         font-size: 4.45rem;
     }
 
     h2 {
-        font-size: 2.75rem;
-        padding-bottom: 1rem;
+        font-size: 2rem;
+        padding-bottom: 0.25rem;
     }
 
     header p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         padding-bottom: 1.75rem;
     }
 
@@ -253,16 +271,21 @@ address, #tel {
     }
 
     .nav-bar a {
-        font-size: 1.75rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    .nav-bar ul{
+        margin: 1rem;
     }
 
     .welcome {
-        margin: 0;
+        margin: 0 auto;
         padding: 4rem 2.25rem 1.25rem;
     }
 
     .welcome p {
-        font-size: 1.35rem;
+        font-size: 1.05rem;
     }
     
     .offerings {
@@ -273,13 +296,13 @@ address, #tel {
     }
 
     .offerings h3 {
-        font-size: 2.3rem;
+        font-size: 1.65rem;
         padding: 0 0.75rem;
     }
 
     .offerings p {
-        font-size: 1.25rem;
-        padding: 0 0.75rem 0.5rem;
+        font-size: 1.05rem;
+        padding: 0 0.75rem;
     }
 
     #provisions {
@@ -296,11 +319,7 @@ address, #tel {
 
     article ul {
         padding: 0 1rem;
-        font-size: 1.35rem;
-    }
-
-    hr {
-        margin: 1.5rem auto;
+        font-size: 1.05rem;
     }
 
     .gallery {
@@ -308,12 +327,7 @@ address, #tel {
     }
 
     .gallery p {
-        font-size: 1.3rem;
-    }
-
-    figure p {
-        font-size: 1.2rem;
-        margin: 0.5rem;
+        font-size: 1.05rem;
     }
 
     #images {
@@ -343,8 +357,54 @@ address, #tel {
 
 /* MEDIA QUERY (large) */
 @media all and (min-width: 900px) {
-header img {
-    width: 25%;
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 2.15em;
+    }
+    
+    header img {
+        width: 25%;
+    }
+
+    header p {
+        font-size: 1.45rem;
+    }
+
+    .nav-bar a {
+        font-size: 1.6rem;
+        margin: 4rem;
+    }
+
+    .nav-bar li {
+        padding: 0.5rem;
+    }
+
+    .welcome {
+        padding: 3.75rem 2.75rem 0 2.75rem;
+    }
+
+    .welcome p {
+        font-size: 1.1rem;
+    }
+
+    .offerings, .gallery {
+        padding: 0.5rem 2.75rem;
+    }
+
+    .offerings h3 {
+        font-size: 1.75rem;
+    }
+
+    .offerings p, li {
+        font-size: 1rem;
+    }
+
+    .gallery p {
+        font-size: 0.95rem;
     }
 
     #images {
@@ -359,36 +419,62 @@ header img {
     #basket-img {
         grid-column: 2/3;
     }
+
+    .gallery a.btn {
+        font-size: 1.05rem;
+    }
+
+    address, .social {
+        font-size: 1rem;
+    }
 }
 
 
 /* MEDIA QUERY (xl) */
 @media all and (min-width: 1200px) {
     header, footer {
-        width: 100%;
-        max-width: 1600px;
+        max-width: 1500px;
         margin: 0 auto;
     }
 
-    .nav-bar a {
-        font-size: 2.35rem;
-        margin: 9rem;
+    header img {
+        width: 20%;
     }
 
-    .nav-bar li {
-        padding: 0.75rem;
+    .nav-bar a {
+        font-size: 1.55rem;
+        margin: 0 7rem;
     }
-    
-    hr {
-        padding: 0.075rem;
-        width: 93%;
-    } 
+
+    .welcome {
+        padding: 3rem 11rem 0 11rem;
+    }
+
+    .welcome p {
+        font-size: 1.025rem;
+    }
+
+    .offerings, .gallery {
+        padding: 0 11rem;
+    }
+
+    .offerings h3 {
+        font-size: 1.65rem;
+    }
+
+    .offerings p, li {
+        font-size: 1rem;
+    }
 
     #images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         padding-bottom: 0.75rem;
     }
+
+    .gallery p {
+        font-size: 0.95rem;
+    } 
 
     #tomatoes {
         grid-column: 1/2;
@@ -410,7 +496,3 @@ header img {
         grid-column: 5/6;
     }
 }
-
-
-
-
