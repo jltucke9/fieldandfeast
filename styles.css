@@ -433,7 +433,7 @@ address, #tel {
 /* MEDIA QUERY (xl) */
 @media all and (min-width: 1200px) {
     header, footer {
-        max-width: 1500px;
+        max-width: 1650px;
         margin: 0 auto;
     }
 
@@ -447,7 +447,7 @@ address, #tel {
     }
 
     .welcome {
-        padding: 3rem 11rem 0 11rem;
+        padding: 3rem 10rem 0 10rem;
     }
 
     .welcome p {
@@ -455,7 +455,7 @@ address, #tel {
     }
 
     .offerings, .gallery {
-        padding: 0 11rem;
+        padding: 0 10rem;
     }
 
     .offerings h3 {
